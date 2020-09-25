@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html><head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta charset="gb2312">
+	<title>越野e族移动客户端-中国越野/SUV/改装/旅行/赛事资讯中心</title>
+	<meta name="keywords" content="越野ｅ族 中国越野 越野 SUV 旅行 赛事 改装 户外 FB 资讯中心 品车 新闻 论坛 汽车 生活 摄影 兴趣 户外 公益 商城 车库 专题 杂志 社区">
+	<meta name="description" content="越野e族FBLIFE.COM是中国著名的汽车类资讯与社区网站,是中国越野/SUV/改装/旅行/赛事领域第一媒体与互动中心。作为中国SUV领域的绝对权威，越野e族FBLIFE的资源垄断率超过90%，在与越野人群相关的自驾旅行、户外摄影、科考探险、越野改装、大型竞赛等方面也处于遥遥领先的地位。">
+	<meta name="generator" content="越野 SUV 旅行 赛事 改装 户外 FB">
+	<meta name="author" content="越野e族">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<style type="text/css">
+		html,body{
+		    width: 100%;
+		    height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.mui-content{
+			/* background: url("img/bg-web.jpg") bottom center no-repeat #efeff4 ;
+			background-size: 100% 100%; */
+			background-color: #efeff4;
+			background-image:url("img/bg-web.jpg"); 
+			background-position: 100% 100%; 
+			background-repeat: no-repeat; 
+			background-attachment:fixed; 
+			background-size: cover; 
+			-webkit-background-size: cover;/* 兼容Webkit内核浏览器如Chrome和Safari */ 
+			-o-background-size: cover;/* 兼容Opera */ 
+			zoom: 1; 
+		}
+		.margin-auto{
+			margin: 0 auto;
+		}
+		.p-container{
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate3d(-50%,-50%,0) scale(1);
+			opacity: 0;
+		}
+		.p-logo{
+		}
+		.p-logo img{
+			width: 100px;
+			height: 100px;
+			/* margin-bottom: 30px; */
+		}
+		.p-des{
+			font-size: 14px;
+			color: #000;
+		}
+		.p-des-title{
+			font-weight: 600;
+		}
+		.p-code{
+			overflow: hidden;
+		}
+		.p-code-img{
+			float: left;
+			text-align: center;
+		}
+		.p-code-img img{
+			width: 100px;
+			height: 100px;
+			/* margin-bottom: 30px; */
+		}
+		.p-code-btn{
+			font-size: 15px;
+			color: #000;
+			overflow: hidden;
+			vertical-align: middle;
+			padding: 5px 15px;
+			border-radius: 20px;
+		}
+		.p-code-btn img{
+			/* float: left; */
+			width: 20px;
+			height: 20px;
+			margin-right: 5px;
+		}
+		.p-android{
+			background: #fff;
+		}
+		.p-ios{
+			background-color: #fcab2a;
+			
+		}
+		.padding-right{
+			padding-right: 20px;
+		}
+		.p-item{
+			padding: 0 40px;
+		}
+		/* .p-code-web,.p-code-h5{
+			display: none;
+		} */
+		.p-container-web.p-container{
+			min-width: 750px;
+			opacity: 1;
+		}
+		.p-container-web .p-des{
+			color: #fff;
+		}
+		.p-container-web .p-des .p-des-title{
+			font-size: 22px;
+		}
+		.p-container-web .p-item{
+			position: relative;
+			height: 180px;
+		}
+		.p-container-web .p-item::after{
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 15%;
+			width: 2px;
+			height: 70%;
+			background-color: #fff;
+			border-radius: 20px;
+		}
+		.p-container-web .noafter::after{
+			display: none;
+		}
+		.p-container-web .p-code-h5{
+			display: none;
+		}
+		/* .p-container-web .p-code-web{
+			display: flex;
+		} */
+		.p-container-web .p-des-title-h5{
+			display: none;
+		}
+		.p-container-web .p-code-btn{
+			margin-bottom: 10px;
+		}
+		
+		
+		.p-container.p-container-h5{
+			top: 40%;
+			left: 50%;
+			opacity: 1;
+		}
+		.p-container-h5 .p-des{
+			color: #333;
+			margin-top: 10px;
+		}
+		.p-container-h5 .p-des .p-des-title{
+			font-size: 16px;
+		}
+		.p-container-h5 .p-item{
+			position: relative;
+			height: auto;
+			padding: 30px 10px 0;
+		}
+		.p-container-h5 .p-item::after{
+			display: none;
+		}
+		.p-container-h5 .p-code-web{
+			display: none;
+		}
+		/* .p-container-h5 .p-code-h5{
+			display: flex;
+		} */
+		.p-container-h5 .p-des-title-web{
+			display: none;
+		}
+		.p-container-h5 .p-code-btn{
+			margin-top: 10px;
+			font-size: 12px;
+			padding: 4px 10px;
+			min-width: 110px;
+			text-align: center;
+		}
+		.p-code-btn img{
+			width: 15px;
+			height: 15px;
+		}
+	</style>
+</head>
+<script type="text/javascript">
+	function is_mobile(){
+	    var regex_match=/(nokia|iphone|android|motorola|^mot-|softbank|foma|docomo|kddi|up.browser|up.link|htc|dopod|blazer|netfront|helio|hosin|huawei|novarra|CoolPad|webos|techfaith|palmsource|blackberry|alcatel|amoi|ktouch|nexian|samsung|^sam-|s[cg]h|^lge|ericsson|philips|sagem|wellcom|bunjalloo|maui|symbian|smartphone|midp|wap|phone|windows ce|iemobile|^spice|^bird|^zte-|longcos|pantech|gionee|^sie-|portalmmm|jigs browser|hiptop|^benq|haier|^lct|operas*mobi|opera*mini|320x320|240x320|176x220)/i;
+	    var u=navigator.userAgent;
+	    if (null==u){
+	        return true;
+	    }
+	    var result = regex_match.exec(u);
+	    if(null==result){
+	        return false
+	    }
+	    else{
+	        return true
+	    }
+	}
+	// 获取class
+	function getClass(el) {
+		return el.getAttribute('class')
+	}
+	// 设置class
+	function setClass(el, cls) {
+		return el.setAttribute('class', cls)
+	}
+	
+	// 判断class是否存在
+	function hasClass(elements, cName) {
+		return !!elements.className.match(new RegExp("(\\s|^)" + cName + "(\\s|$)"));
+	}
+	// 添加clss
+	function addClass(elements, cName) {
+		if (!hasClass(elements, cName)) {
+			elements.className += " " + cName;
+		}
+	}
+	// 删除class
+	function removeClass(elements, cName) {
+		if (hasClass(elements, cName)) {
+			elements.className = elements.className.replace(new RegExp("(\\s|^)" + cName + "(\\s|$)"), " ");
+		}
+	}
+	function loadClass(){
+		console.log('document.body.clientWidth:',document.body.clientWidth)
+		var bodyWidth = document.body.clientWidth
+		var container = document.getElementById('container')
+		var content = document.getElementById('content')
+		if(bodyWidth < 750 || is_mobile()){
+			// p-container-web
+			// 
+			removeClass(container,'p-container-web')
+			// removeClass(container,'p-container-web')
+			addClass(container,'p-container-h5')
+			addClass(content,'flex-direction')
+		} else {
+			console.log(getClass(container));
+			removeClass(container,'p-container-h5')
+			removeClass(content,'flex-direction')
+			addClass(container,'p-container-web')
+		}
+	}
+	window.onload = loadClass
+	window.onresize = loadClass
+			
+</script>
+
+<body class='mui-content'>
+	<div class="p-container flex justify-center align-center " id="container">
+		<div class="flex justify-center align-center " id="content">
+			<div class="p-item p-head flex justify-between flex-direction align-center">
+				<div class="p-logo">
+					<img src="img/logo.png" alt="越野e族" />
+				</div>
+				<div class="p-des flex justify-center align-center flex-direction">
+					<span class="p-des-title p-des-title-h5">
+						越野e族客户端全新改版
+					</span>
+					<span class="p-des-title p-des-title-web">
+						越野e族客户端
+					</span>
+					<span class="">
+						[自媒体] [短视频] [论坛]
+					</span>
+				</div>
+			</div>
+			<div class="p-item p-code-web p-code flex justify-between flex-direction align-center">
+				<div class="p-code-img">
+					<img src="img/iphonecode.png" alt="iPhone二维码" >
+				</div>
+				<a href="#" class="p-code-btn p-ios flex align-center">
+					<img src="img/iphone.png" />iPhone版下载
+				</a>
+			</div>
+			<div class="p-item noafter p-code-web p-code flex justify-between flex-direction align-center">
+				<div class="p-code-img">
+					<img src="img/androidcode.png" alt="Android二维码" >
+				</div>
+				<a href="#" class="p-code-btn p-android flex align-center">
+					<img src="img/android.png" />Android版下载
+				</a>
+			</div>
+			<div class="p-code-h5 flex justify-center align-cente">
+				<div class="p-item flex justify-center align-center flex-direction">
+					<div class="p-code-img">
+						<img src="img/iphonecode.png" alt="iPhone二维码" >
+					</div>
+					<a href="#" class="p-code-btn p-ios flex align-center justify-center">
+						<img src="img/iphone.png" />iPhone版下载
+					</a>
+				</div>
+				<div class="p-item flex justify-center align-center flex-direction">
+					<div class="p-code-img">
+						<img src="img/androidcode.png" alt="Android二维码" >
+					</div>
+					<a href="#" class="p-code-btn p-android flex align-center justify-center">
+						<img src="img/android.png" />Android版下载
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

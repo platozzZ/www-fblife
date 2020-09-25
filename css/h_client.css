@@ -1,0 +1,15 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.mui-content{
+    background: url("../img/banner-bg.jpg") bottom center no-repeat #efeff4 ;
+    background-size: 100% 100%;
+}
+
+
+.mui-content_m{
+    background: url("../img/bbb.jpg") bottom center no-repeat #efeff4 ;
+    background-size: 100% 100%;
+}
